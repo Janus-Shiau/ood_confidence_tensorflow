@@ -1,0 +1,12 @@
+# Types
+*.pyc
+playground.py
+
+# Folders
+logs/
+__pycache__/
+.vscode/
+.ipynb_checkpoints/
+
+# Individual files
+
