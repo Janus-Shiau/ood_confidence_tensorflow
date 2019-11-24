@@ -1,6 +1,6 @@
 # lookahead_tensorflow
 Here is an unofficial implementation and experiement of estimating the confidence for prediction form neural networks from
-["Learning Confidence for Out-of-Distribution Detection in Neural Networks"](https://arxiv.org/pdf/1802.04865.pdf) for tensorflow.
+["Learning Confidence for Out-of-Distribution Detection in Neural Networks"](https://arxiv.org/pdf/1802.04865.pdf) for [Tensorflow](https://www.tensorflow.org/).
 
 <img src="doc/paper_fig_outline.png" alt="Overview of the work" width="1000" /></a>
 
@@ -9,7 +9,7 @@ Here is an unofficial implementation and experiement of estimating the confidenc
 
 
 How to measure the confidence of the network is an interesting topics, and raising more and more attention recently.\
-For example, the workshop, [Uncertainty and Robustness in Deep Learning - ICML 2019](https://sites.google.com/view/udlworkshop2019/home)
+For example, the workshop, [Uncertainty and Robustness in Deep Learning - ICML 2019](https://sites.google.com/view/udlworkshop2019/home).
 
 In this paper, the author propose confidence branch with estimated confidence to perform out-of-distribution detection.\
 On the other hand, this confidence can also be use to estimate the uncertainty of the model.
@@ -101,11 +101,11 @@ If confidence loss is greater than budger, decrease the weight; otherwise, incre
 The code of using budget will be updated soon.
 
 #### Experimental results
-To be brief, the results of MNIST look similar to the paper.
+To be brief, the results of MNIST look similar to the paper.\
 <img src="doc/mid_acc.png" alt="Results of moderate acuurate model" width="500" /></a>
 
 However, building a high accuracy model disintegrates the performance of OOD a little bit.
-This is caused by the insufficient negative samples. I'm still working on this issue.
+This is caused by the insufficient negative samples. I'm still working on this issue.\
 <img src="doc/high_acc.png" alt="Results of highly acuurate model" width="500" /></a>
 
 
