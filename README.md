@@ -1,4 +1,4 @@
-# lookahead_tensorflow
+# Confidence of Out-of-Distribution for Tensorflow
 Here is an unofficial implementation and experiement of estimating the confidence for prediction form neural networks from
 ["Learning Confidence for Out-of-Distribution Detection in Neural Networks"](https://arxiv.org/pdf/1802.04865.pdf) for [Tensorflow](https://www.tensorflow.org/).
 
@@ -85,7 +85,7 @@ However, other structures of networks are also work.
 
 #### The interpolation for hinting
 The paper using a simple linear interpolation function to give hints to model.\
-In my opinion, different problem should using different interpolation function to generate a smooth interpolated reuslts.
+In my opinions, different problem should using different interpolation function to generate a smooth interpolated reuslts.
 
 #### The weight of confidence penalty
 The weight of the confidence loss (penalty) is very critical and sensitive.
