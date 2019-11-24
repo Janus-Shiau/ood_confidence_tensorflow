@@ -16,8 +16,9 @@ On the other hand, this confidence can also be use to estimate the uncertainty o
 
 To be brief, the idea of this paper is very intuitive and easy to apply.
 
-- Simple and intuitive!
-- very few addictional required.
+- Simple and intuitive. 
+- Quick proof of concept!
+- Very few addictional computations required.
 
 However, in my opinions, there are still some issues should be discussed and explored.\
 The author have proposed some tricks to tackle with these issues. I still work on reproduce them.
