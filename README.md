@@ -101,7 +101,7 @@ If confidence loss is greater than budger, decrease the weight; otherwise, incre
 
 The code of using budget will be updated soon.
 
-#### Experimental results
+### Experimental results
 To be brief, the results of MNIST look similar to the paper.\
 <img src="doc/mid_acc.png" alt="Results of moderate acuurate model" width="500" /></a>
 
