@@ -80,12 +80,10 @@ class BaseConfNet():
         """
         conf = self.conf if conf is None else conf
         with tf.variable_scope(name):
+            y = self._interpolate(x_p=output, x_gt=gt, conf=conf, func=func)
             if self._half_batch:
                 bz = output.get_shape().as_list()[0]
-                y = self._interpolate(x_p=output[bz,...], x_gt=gt, conf=conf, func=func)
-                y = tf.concat(y[:bz//2,...], output[bz//2:,...])
-            else:
-                y = self._interpolate(x_p=output, x_gt=gt, conf=conf, func=func)
+                y = tf.concat(y[:bz//2,...], output[bz//2:,...], axis=0)      
         
         return y
 
